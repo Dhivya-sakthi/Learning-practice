@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musical page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-image: url(../asserts/background\ music\ image.jpg);
+            background-size: cover;
+            background-position: center;
+            background-position: relative;
+        }
+        .nav li{
+            float: right;
+            list-style: none;
+        }
+        .nav a{
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+        .left-side{
+            margin-left: 11%;
+        }
+        .left-side h1{
+            font-size: 50px;
+            color: crimson;
+        }
+        .right-side{
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+        }
+        .right-side p{
+            font-size: 21px;
+            color: black;
+            font-weight: 650;
+            margin-right: 20px;
+
+        }
+        #icon{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">ARTISTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>    
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="left-side">
+            <h1>MY SOUNDS</h1>
+        </div>
+        <div class="right-side">
+            <p>Click here to listen</p>
+            <img src="../asserts/pause icon.png" id="icon">
+        </div>
+    </div>
+    <audio id="mysound">
+        <source src="../asserts/joyful-life-241976 (1).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        let mysound=document.getElementById("mysound");
+        let icon=document.getElementById("icon");
+        icon.onclick=function(){
+            if (mysound.paused){
+                mysound.play();
+                icon.src ="https://media.geeksforgeeks.org/wp-content/uploads/20210402235545/Pause.png";
+
+            }
+            else{
+                mysound.pause();
+                icon.src="https://media.geeksforgeeks.org/wp-content/uploads/20210402235520/play.png";
+            }
+        }
+    </script>
+
+</body>
+</html>

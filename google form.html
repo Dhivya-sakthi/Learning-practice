@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google form</title>
+    <style>
+        body{
+            background-color: #f5f5f5;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .container{
+            background-color: white;
+            padding: 40px;
+            width: 400px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            
+        }
+        .container img{
+            width: 80px;
+            margin-bottom: 10px;
+        }
+        .container h3{
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #202124;
+            
+        }
+        .container input{
+            border: none;
+            width: 80%;
+            padding: 15px;
+            margin: 10px;
+            border-bottom: 2px solid #dadce0;
+            font-size :17px;   
+        }
+        .container a{
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 12px;
+            font-weight: 450;
+            margin-right: 60%;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            font-family: tahoma,verdana, sans-serif;
+            font-weight: 600;
+        }
+        .container a:hover{
+            text-decoration: underline;
+        }
+        .next{
+            width: 25%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .create-account{
+            background-color: #f5f5f5;
+            color: #1a73e8;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            margin-right: 30%;
+            font-weight: 520;
+            font-family: tahoma,verdana, sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+        
+
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+     <img src="../asserts/Google_2015_logo.svg.webp">
+     <h2 style="font-family: Arial, Helvetica, sans-serif;">Sign in</h2>
+     <h3>with your Goole Account</h3>
+     <input type="email"  placeholder="Email or phone">
+     <a href="#">Forgot email?</a>
+     <p style="margin-bottom: 2px; margin-left: 10%;">Not your computer?use Guest mode to sign in privately.</p>
+     <a href="#">Learn more</a>
+     <button class="create-account">Create account</button>
+     <button class="next">Next</button>
+
+   </div>
+</body>
+</html>
